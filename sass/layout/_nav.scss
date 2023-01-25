@@ -1,0 +1,233 @@
+.sitenav {
+  display: none;
+  margin-left: 93px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    .sitenav__item {
+      margin-top: 32px;
+    }
+    .sitenav__link {
+      color: var(--second-text-color);
+      text-decoration: none;
+      transition: color 250ms linear;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .sitenav__item + .sitenav__item {
+      margin-left: 50px;
+    }
+  }
+
+  .active::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-text-color);
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -33px;
+    pointer-events: none;
+  }
+
+  .sitenav__linkcurrent {
+    color: var(--accent-text-color);
+    display: block;
+    text-decoration: none;
+    position: relative;
+    .sitenav .sitenav & {
+      color: var(--accent-text-color);
+    }
+  }
+
+  .sitenav__link {
+    display: block;
+    text-decoration: none;
+
+    .sitenav &:hover,
+    .sitenav &:focus {
+      color: var(--accent-text-color);
+    }
+  }
+}
+
+.open-menu-btn {
+  background: none;
+  border-color: transparent;
+  border: none;
+  padding: 0;
+  margin-right: 8px;
+  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.close-menu-btn {
+  background: none;
+  border-color: transparent;
+
+  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-icon {
+  width: 24px;
+  height: 16px;
+}
+
+.menu-iconclose {
+  width: 18px;
+  height: 18px;
+}
+
+.close-menu-btn {
+  margin-top: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding: 0 10px;
+  background: none;
+  border: none;
+  display: block;
+  margin-left: auto;
+  transition: color 250ms linear, border-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--accent-text-color);
+  }
+}
+
+.mob-menu {
+  display: none;
+  position: fixed;
+  text-align: left;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  padding-top: 21px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 15px;
+  background-color: #ffffff;
+  @media screen and (min-width: 768px) {
+    display: none;
+    position: static;
+    background-color: initial;
+    top: auto;
+    width: auto;
+    height: auto;
+    z-index: 5;
+  }
+  &.is-open {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.mobmenu__item {
+  padding-bottom: 32px;
+}
+
+.mob-menu-top {
+  margin-top: 0;
+}
+
+.mob-menu-bottom {
+  margin-top: auto;
+}
+
+.mobmenu__link {
+  font-size: 40px;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  line-height: 1, 2;
+  letter-spacing: 0.02em;
+  &:active {
+    color: var(--accent-text-color);
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+.contmobmenu__item {
+  margin-top: 32px;
+}
+
+.socialmobmenu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 64px;
+}
+
+.socialmobmenu__link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-text-color);
+  padding-right: 10px;
+  padding-left: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.socialmobmenu__item {
+  border-right: solid #757575 1px;
+  &:first-child {
+    .socialmobmenu__link {
+      padding-left: 0;
+    }
+  }
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.phonemobmenu {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  padding-left: 0;
+  margin-bottom: 32px;
+  color: #757575;
+  text-decoration: none;
+  transition: color 250ms linear, border-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
+
+.mailmobmenu {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #757575;
+  transition: color 250ms linear, border-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}

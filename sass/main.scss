@@ -1,0 +1,23 @@
+@import "./utils/variables";
+
+@import "./base/_reset_style";
+@import "./base/common";
+
+@import "./components/container";
+@import "./components/headerlogo";
+@import "./components/footerlogo";
+@import "./components/modal";
+@import "./components/button";
+@import "./components/title_adress";
+
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/contact";
+@import "./layout/hero";
+@import "./layout/section-advantages";
+@import "./layout/whatwedo";
+@import "./layout/ourcomand";
+@import "./layout/sectionourclients";
+@import "./layout/footer";
+@import "./layout/footer_social";
+@import "./layout/portfolio";

@@ -1,0 +1,128 @@
+.comand {
+  // margin-top: 60px;
+  background-color: var(--section-color);
+  // @media screen and (min-width: 768px) {
+  //   padding-top: 60px;
+  //   padding-bottom: 30px;
+  // }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
+}
+
+.comand__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    line-height: 1.7;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.7;
+    margin-bottom: 50px;
+  }
+}
+
+.professions__name {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+
+.professions__item {
+  margin-bottom: 16px;
+  font-weight: 400;
+  color: var(--main-text-color);
+}
+
+.professions {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--text-color);
+}
+
+.comand__item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc(50% - 15px);
+    margin-top: 30px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+    width: calc(25% - 15px);
+    margin-top: 0;
+  }
+}
+
+.comands {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+.comand__item .img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.sociallist {
+  display: flex;
+  justify-content: center;
+}
+
+.sociallist__item {
+  width: 44px;
+  height: 44px;
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.sociallist__link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 250ms linear, background-color 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+  }
+}
+
+.sociallist__icon {
+  fill: #afb1b8;
+  .sociallist__link:hover &,
+  .sociallist__link:focus & {
+    fill: var(--section-color);
+  }
+}

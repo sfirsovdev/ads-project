@@ -1,0 +1,98 @@
+.hero {
+  text-align: center;
+  padding: 118px 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg/Header-1x-m.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  //
+  //
+  @media not all,
+    screen and (min-resolution: 192dpi) and (min-resolution: 2dppx) and (-webkit-min-device-pixel-ratio: 2) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg/Header-2x-m.jpg);
+  }
+
+  @media not all, screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg/Header-1x-t.jpg);
+  }
+  @media not all,
+    screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-resolution: 2dppx) and (-webkit-min-device-pixel-ratio: 2) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg/Header-2x-t.jpg);
+  }
+  @media not all, screen and (min-width: 1200px) {
+    padding: 200px 0;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg/Header-1x-d.jpg);
+  }
+  @media not all,
+    screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-resolution: 2dppx) and (-webkit-min-device-pixel-ratio: 2) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg/Header-2x-d.jpg);
+  }
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
+  color: var(--text-color);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.hero__button {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 30px;
+  background-color: var(--accent-text-color);
+  color: var(--text-color);
+  letter-spacing: 0.06em;
+  transition: color 250ms linear, background-color 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--background-text-color);
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}

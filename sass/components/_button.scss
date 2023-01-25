@@ -1,0 +1,80 @@
+.button {
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.portfolio {
+  padding-top: 45px;
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.portfoliobutton {
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+  }
+}
+
+.portfoliobutton__item {
+  padding-top: 15px;
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+  }
+}
+
+.portfoliobutton__item + .portfoliobutton__item {
+  padding-left: 8px;
+}
+
+.portfoliobutton__item:nth-child(3n + 4) {
+  padding-left: 0;
+  @media screen and (min-width: 768px) {
+    padding-left: 8px;
+  }
+}
+
+.portfoliobutton__button {
+  border: none;
+  border-radius: 4px;
+
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  cursor: pointer;
+
+  background-color: var(--section-color);
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+  transition: color 250ms linear, background-color 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &focus {
+    background: var(--accent-text-color);
+    color: var(--text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
