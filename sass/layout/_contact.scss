@@ -85,18 +85,19 @@
 
 .lang__list>li:hover .sub-lang__list {
 display: block;
-background: rgba(0, 170, 238, 0.9);
-
 }
 
 .sub-lang__list {
-  right: 7px;
-  text-align: center;
   display: none;
   position: absolute;
-  width: 32px;
+  width: inherit;
   padding-bottom: 0;
+  background-color: whitesmoke;
+  // border: solid 1px rgba(0, 0, 0, 0.287);
+  // border-radius: 2px;
 }
 
-
+.lang__link {
+text-decoration: none;
+}
 

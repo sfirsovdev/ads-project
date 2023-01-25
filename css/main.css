@@ -1094,16 +1094,18 @@ textarea::placeholder {
 
 .lang__list > li:hover .sub-lang__list {
   display: block;
-  background-color: gray;
 }
 
 .sub-lang__list {
-  right: 7px;
-  text-align: center;
   display: none;
   position: absolute;
-  width: 32px;
+  width: inherit;
   padding-bottom: 0;
+  background-color: whitesmoke;
+}
+
+.lang__link {
+  text-decoration: none;
 }
 
 .hero {
