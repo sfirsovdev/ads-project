@@ -2,8 +2,8 @@
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
 
-    require 'phpmailer/src/Exception.php';
-    require 'phpmailer/src/PHPMailer.php';
+    require 'PHPMailer/src/Exception.php';
+    require 'PHPMailer/src/PHPMailer.php';
 
     $mail = new PHPMailer(true);
     $mail->CharSet = 'UTF-8';
@@ -32,6 +32,8 @@
     if(trim(!empty($_POST['comment']))){
         $body.='<p><strong>Комментарий:</strong> '.$_POST['comment'].'</p';
     }
+
+$mail->Body = $body;
 
 // Отправляем
 if (!$mail->send()) {
