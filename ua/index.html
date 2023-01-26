@@ -575,13 +575,13 @@
     </button>
     <div class="modalform">
   <h3 class="modalform__title">Оставьте свои данные, мы вам перезвоним</h3>
-  <form action="#" class="form">
+  <form action="#" class="form" id="form">
     <div class="form-field">
       <label for="name" class="form-label">Имя</label>
       <div class="svgwrap">
           <input 
           type="text" 
-          class="form-input" 
+          class="form-input _req" 
           name="name" 
           id="name" 
           />
@@ -594,7 +594,7 @@
       <div class="form-field">
         <label for="phone" class="form-label">Телефон</label>
         <div class="input-svg-wrap">
-          <input type="text" class="form-input" name="phone" id="phone" />
+          <input type="text" class="form-input _req" name="phone" id="phone" />
           <svg class="input-icon" width="18" height="18">
             <use href="../images/svg/icons.svg#icon-phone-black-18dp"></use>
           </svg>
@@ -604,7 +604,7 @@
         <div class="form-field">
           <label for="mail" class="form-label">Почта</label>
           <div class="input-svg-wrap">
-            <input type="text" class="form-input" name="mail" id="mail" />
+            <input type="text" class="form-input _req _email" name="mail" id="mail" />
             <svg class="input-icon" width="18" height="18">
               <use href="../images/svg/icons.svg#icon-email-black-18dp"></use>
             </svg>
@@ -622,20 +622,16 @@
         ></textarea>
       </div>
 
-      <div class="agreementsubmit">
-        <div class="agreementfield">
-          <input 
-          type="checkbox" 
-          name="policy" 
-          id="modal-check" 
-          class="modal-check is-hidden">  
-          <label for="modal-check" class="modalchecktext">
-          Соглашаюсь с рассылкой и принимаю 
+      <div class="checkbox">
+        <!-- <div class="agreementfield"> -->
+        <input id="modal-check" type="checkbox" name="policy" class="modal-check is-hidden _req">
+        <label for="modal-check" class="modalchecktext">
+          Соглашаюсь с рассылкой и принимаю
           <span class="modalchecktext__span">
             <a href="#" class="modalchecktext__link">Условия договора</a>
-            </span>
-          </label> 
-        </div>
+          </span>
+        </label>
+        <!-- </div> -->
         <button type="submit" class="modalchecktext__button">Отправить
       </button>
       </div>
@@ -646,6 +642,7 @@
 
 <script src="../js/modal.js"></script>
 <script src="../js/menu.js"></script>
+<script src="../js/form.js"></script>
 
 
   </body>
