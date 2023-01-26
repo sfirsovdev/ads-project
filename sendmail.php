@@ -34,7 +34,7 @@
     }
 
 // Отправляем
-if (!mail->send()) {
+if (!$mail->send()) {
     $message = 'Ошибка';
     } else {
         $message = 'Данные отправлены!';
