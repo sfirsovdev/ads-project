@@ -65,6 +65,7 @@
 }
 
 .modalform {
+  position: relative;
   padding-top: 40px;
   padding-left: 40px;
   padding-right: 30px;
@@ -73,6 +74,24 @@
     padding-left: 41px;
     padding-right: 39px;
   }
+}
+
+.modalform::after {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/images/loader/spinner.gif') center/50px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.modalform._sending::after {
+ opacity: 1;
+ visibility: visible;
 }
 
 .modalform__title {
