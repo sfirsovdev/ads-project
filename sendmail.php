@@ -11,14 +11,14 @@
     $mail->IsHTML(true);
 
     // От кого письмо
-    $mail->setFrom('info@мойсайт', 'Мойсайт');
+    $mail->setFrom('info@good-adverts.com', 'good-adverts.com');
     // Кому отправить
     $mail->addAddress('s.firsov1985@gmail.com');
     // Тема письма
     $mail->Subject = 'Новая заявка с сайта';
 
-    // Тело письма
-    $body='<h1>Тут тело письма если надо</h1>';
+    // // Тело письма
+    // $body='<h1>Тут тело письма если надо</h1>';
 
     if(trim(!empty($_POST['name']))){
         $body.='<p><strong>Имя:</strong> '.$_POST['name'].'</p';
