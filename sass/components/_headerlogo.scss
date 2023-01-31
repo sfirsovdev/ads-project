@@ -2,28 +2,9 @@
   display: block;
   margin-top: 16px;
   margin-bottom: 16px;
-  font-family: raleway;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.17;
-  color: var(--second-text-color);
   text-decoration: none;
-  letter-spacing: 0.03em;
-  transition: color 250ms linear;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 768px) {
-    margin-top: 26px;
-    margin-bottom: 26px;
-  }
-  @media screen and (min-width: 1200px) {
-    font-size: 26px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-  span {
-    color: var(--accent-text-color);
-    &:hover {
-      color: var(--accent-text-color);
-    }
+    margin-top: 13px;
+    margin-bottom: 13px;
   }
 }

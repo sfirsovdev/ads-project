@@ -9,7 +9,7 @@
     flex-direction: column;
   }
   @media screen and (min-width: 1200px) {
-    margin-top: 32px;
+    margin-top: 25px;
     flex-direction: row;
   }
 }
@@ -27,7 +27,7 @@
 .contact__item + .contact__item {
   margin-left: 0;
   @media screen and (min-width: 1200px) {
-    margin-left: 30px;
+    margin-left: 15px;
   }
 }
 
@@ -74,6 +74,63 @@
   &:focus {
     fill: var(--accent-text-color);
     color: var(--accent-text-color);
+  }
+}
+
+.contact__link-whatsapp {
+  margin-right: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--main-text-color-text-color);
+  fill: #757575;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: #25D366;
+    color: #25D366;
+  }
+}
+
+.contact__link-viber {
+  margin-right: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--main-text-color-text-color);
+  fill: #757575;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: #7360F2;
+      color: #7360F2;
+  }
+}
+
+.contact__link-gmail {
+  margin-right: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--main-text-color-text-color);
+  fill: #757575;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: #DB4437;
+    color: #DB4437;
   }
 }
 

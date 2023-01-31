@@ -118,40 +118,14 @@ picture img {
   display: block;
   margin-top: 16px;
   margin-bottom: 16px;
-  font-family: raleway;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.17;
-  color: var(--second-text-color);
   text-decoration: none;
-  letter-spacing: 0.03em;
-  -webkit-transition: color 250ms linear;
-  transition: color 250ms linear;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
   .header__logo {
-    margin-top: 26px;
-    margin-bottom: 26px;
+    margin-top: 13px;
+    margin-bottom: 13px;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .header__logo {
-    font-size: 26px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-}
-
-.header__logo span {
-  color: var(--accent-text-color);
-}
-
-.header__logo span:hover {
-  color: var(--accent-text-color);
 }
 
 .footeradress__logo {
@@ -1023,7 +997,7 @@ textarea::placeholder {
 
 @media screen and (min-width: 1200px) {
   .contact {
-    margin-top: 32px;
+    margin-top: 25px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1053,7 +1027,7 @@ textarea::placeholder {
 
 @media screen and (min-width: 1200px) {
   .contact__item + .contact__item {
-    margin-left: 30px;
+    margin-left: 15px;
   }
 }
 
@@ -1111,6 +1085,66 @@ textarea::placeholder {
 .contact__link:hover, .contact__link:focus {
   fill: var(--accent-text-color);
   color: var(--accent-text-color);
+}
+
+.contact__link-whatsapp {
+  margin-right: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--main-text-color-text-color);
+  fill: #757575;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__link-whatsapp:hover, .contact__link-whatsapp:focus {
+  fill: #25D366;
+  color: #25D366;
+}
+
+.contact__link-viber {
+  margin-right: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--main-text-color-text-color);
+  fill: #757575;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__link-viber:hover, .contact__link-viber:focus {
+  fill: #7360F2;
+  color: #7360F2;
+}
+
+.contact__link-gmail {
+  margin-right: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--main-text-color-text-color);
+  fill: #757575;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  -webkit-transition: color 250ms linear;
+  transition: color 250ms linear;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__link-gmail:hover, .contact__link-gmail:focus {
+  fill: #DB4437;
+  color: #DB4437;
 }
 
 .lang__list {
