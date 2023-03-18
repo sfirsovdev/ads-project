@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@400;500;600;700&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" >
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body class="body">
+<div class="header-banner"> <!--объеденяем баннер -->
   <header class="header">
-  <div class="container container-main"> 
+  <div class=container-main> 
     <nav class="header__nav container-main">
         <a class="header__logo" href="#">
-          <img src="../images/logo/logo.png" alt="logo" width="170px" height="50px">
+          <img src="../images/logo/logo.png" alt="logo" width="170" height="50">
         </a>
 
     
@@ -29,9 +31,12 @@
             <a href="./portfolio.html" class="sitenav__link">Портфолио</a></li>
           <li class="sitenav__item">
             <a href="" class="sitenav__link">Контакты</a></li>
+            <li class="sitenav__item">
+              <a href="" class="sitenav__link">Блог</a>
+            </li>
         </ul>
       
-<button class="open-menu-btn" icon-menu_burger>
+<button class="open-menu-btn" >
   <svg class="menu-icon">
   <use href="./images/svg/icons.svg#icon-menu_24px"></use>
   </svg>
@@ -41,33 +46,33 @@
 <ul class="contact">
 
   <li class="contact__item">
-    <a href="" class="contact__link telegram">
-      <svg class="contact__icon " width="30" height="30">
-        <use href="./images/svg/icons.svg#icon-icons8-telegram-app"></use>
+    <a href="https://t.me/advertsman" class="contact__link-telegram">
+      <svg class="contact__icon-telegram " width="30" height="30">
+        <use href="./images/svg/icons.svg#icon-telegram"></use>
       </svg>
     </a>
   </li>
 
   <li class="contact__item">
-    <a href="" class="contact__link-whatsapp">
-      <svg class="contact__icon" width="30" height="30">
-        <use href="./images/svg/icons.svg#icon-icons8-whatsapp"></use>
+    <a href="https://api.whatsapp.com/send?phone=380931941416" class="contact__link-whatsapp">
+      <svg class="contact__icon-whatsapp" width="30" height="30">
+        <use href="./images/svg/icons.svg#icon-whatsapp"></use>
       </svg>
     </a>
   </li>
 
   <li class="contact__item">
-    <a href="" class="contact__link-viber">
-      <svg class="contact__icon" width="30" height="30">
-        <use href="./images/svg/icons.svg#icon-icons8-viber"></use>
+    <a href="viber://chat?number=380931941416" class="contact__link-viber">
+      <svg class="contact__icon-viber" width="30" height="30">
+        <use href="./images/svg/icons.svg#icon-viber"></use>
       </svg>
     </a>
   </li>
 
   <li class="contact__item">
-    <a href="" class="contact__link-gmail">
-      <svg class="contact__icon" width="30" height="30">
-        <use href="./images/svg/icons.svg#icon-icons8-gmail-logo"></use>
+    <a href="mailto:zakaz@good-adverts.com" class="contact__link-gmail">
+      <svg class="contact__icon-gmail" width="30" height="30">
+        <use href="./images/svg/icons.svg#icon-mail"></use>
       </svg>
     </a>
   </li>
@@ -75,27 +80,23 @@
   
 </ul>
 
+
 <ul class="lang__list">
   <li class="lang__item">
     <a href="./index.html" class="lang__link">
-      <img src="./images/flag/ru.png" alt="ru flag" width="20px" height="15px">
-    Ru</a>
+      Ru <i class="arrow down"></i></a>
     <ul class="sub-lang__list">
       <li class="lang__item">
         <a href="./ua/index.html" class="lang__link">
-          <img src="./images/flag/ua.png" alt="ua flag" width="20px" height="15px">
-        Ua</a>
+          Ua</a>
       </li>
       <li class="lang__item">
         <a href="./en/index.html" class="lang__link">
-          <img src="./images/flag/usa.png" alt="usa flag" width="20px" height="15px">
-        En</a>
+          En</a>
       </li>
     </ul>
   </li>
 </ul>
-
-
 
 
 
@@ -149,15 +150,73 @@
 
 </div>
     
-        </div>
+        
     </header><!--/.Header-->
 
 <main>
   <!--Hero-->
-      <section class="hero">
-        <h1 class="hero__title">Эффективные решения <br>для вашего бизнеса</h1>
-        <button class="hero__button button " type="button" data-modal-open>Заказать услугу</button>
-      </section><!--/.Hero-->
+<div class="container hero__box">
+      <div class="hero">
+        <h1 class="hero__title">Студия интернет-рекламы Good Ads</h1>
+        <img src="../images/header/line.png" class="hero__line" alt="line">
+        <h2 class="hero__title2">Эффективные решения <br> для вашего бизнеса</h2>
+
+        <ul class="hero__list">
+
+          <li class="hero__item">
+          <a href="#">
+            <img src="../images/hero/g1.png" alt="goodle ads" width="55" height="55">
+          </a>
+          </li>
+
+          <li class="hero__item">
+            <a href="#">
+              <img src="../images/hero/f1.png" alt="goodle ads" width="55" height="55">
+            </a>
+          </li>
+
+            <li class="hero__item">
+              <a href="#">
+                <img src="../images/hero/i1.png" alt="goodle ads" width="55" height="55">
+              </a>
+            </li>
+
+              <li class="hero__item">
+                <a href="#">
+                  <img src="../images/hero/d1.png" alt="goodle ads" width="55" height="55">
+                </a>
+              </li>
+
+              <li class="hero__item">
+                <a href="#">
+                  <img src="../images/hero/p1.png" alt="goodle ads" width="55" height="55">
+                </a>
+              </li>
+
+                <li class="hero__item">
+                  <a href="#">
+                    <img src="../images/hero/s1.png" alt="goodle ads" width="55" height="55">
+                  </a>
+                </li>
+
+        </ul>
+
+              
+
+        <button class="hero__button button " type="button" data-modal-open>ЗАКАЗАТЬ УСЛУГУ
+          <svg class="button__arrow" width="15" height="30">
+            <use href="./images/svg/icons.svg#icon-arow-1"></use>
+          </svg>
+        </button>
+        
+        <div>
+        <img src="../images/header/mouse.png" class="hero__mouse" alt="mouse">
+        </div>
+
+      </div><!--/.Hero-->
+      </div>
+    </main>
+  </div>  <!--/.Закрываем обьеденение баннера-->
 
       
       <section class="section section-advantages">
@@ -167,45 +226,45 @@
           <li class="advantages__item">
             <div class="advantages__div">
                 <svg class="advantages__icon">
-                  <use href="./images/svg/icons.svg#icon-antenna"></use>
+                  <use href="./images/svg/icons.svg#icon-icon1"></use>
                 </svg>
           </div>
-            <h3 class="advantages__title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-            <p class="advantages__text">Идейные соображения, а также начало повседневной 
-              работы по формированию позиции.</p> </li>
+            <h3 class="advantages__title">ПОГРУЖЕНИЕ В БИЗНЕС</h3>
+            <p class="advantages__text">Проводим глубокий анализ, чтобы разработать решение, 
+              которое позволит вам опережать конкурентов.</p> </li>
 
 
           <li class="advantages__item">
             <div class="advantages__div">
               <svg class="advantages__icon">
-                <use href="./images/svg/icons.svg#icon-clock"></use>
+                <use href="./images/svg/icons.svg#icon-icon2"></use>
               </svg>
             </div>
-            <h3 class="advantages__title">ПУНКТУАЛЬНОСТЬ</h3>
-            <p class="advantages__text">Задача организации, в особенности 
-              же рамки и место обучения кадров влечет за собой.</p>
+            <h3 class="advantages__title">ЭФФЕКТИВНЫЕ ИНСТРУМЕНТЫ</h3>
+            <p class="advantages__text">Благодаря комплексному подходу 
+              и аналитике наша команда обеспечивает рост и достижение ваших бизнес целей.</p>
           </li>
 
           <li class="advantages__item">
             <div class="advantages__div">
               <svg class="advantages__icon">
-                <use href="./images/svg/icons.svg#icon-diagram"></use>
+                <use href="./images/svg/icons.svg#icon-icon3"></use>
               </svg>
             </div>
-            <h3 class="advantages__title">ПЛАНИРОВАНИЕ</h3>
-            <p class="advantages__text">Равным образом консультация с широким активом 
-              в значительной степени обуславливает.</p>
+            <h3 class="advantages__title">РАБОТА В КОМАНДЕ</h3>
+            <p class="advantages__text">Над проектами трудятся опытные маркетологи, 
+              копирайтеры и дизайнеры, превращая бизнес в востребованный продукт или услугу.</p>
           </li>
 
         <li class="advantages__item">
           <div class="advantages__div">
             <svg class="advantages__icon">
-              <use href="./images/svg/icons.svg#icon-astronaut"></use>
+              <use href=" ./images/svg/icons.svg#icon-icon4"></use>
             </svg>
           </div>
-          <h3 class="advantages__title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-          <p class="advantages__text">Значимость этих проблем 
-            настолько очевидна, что реализация плановых заданий.</p>
+          <h3 class="advantages__title">СОБЛЮДЕНИЕ СРОКОВ</h3>
+          <p class="advantages__text">Для каждого бизнеса время играет решающий фактор. 
+            От этого зависит и прибыль. Понимая это мы соблюдаем сроки</p>
         </li>
         </ul>
         </div>
@@ -219,17 +278,17 @@
       <ul class="whatwedo__list container-main">
               <li class="whatwedo__item">
               <img srcset="./images/1x2x/Whatwedo/create.jpg" width="370" src="./images/1x2x/Whatwedo/create.jpg"
-    alt="Печатает на клавиатуре"/>
+    alt="Печатает на клавиатуре">
           <h3 class="whatwedo__blocktitle">СОЗДАНИЕ САЙТОВ</h3>
           </li>
               <li class="whatwedo__item">
               <img srcset="./images/1x2x/Whatwedo/ads.jpg" width="370" src="./images/1x2x/Whatwedo/ads.jpg"
-                alt="Телефон в руке"/>
+                alt="Телефон в руке">
           <h3 class="whatwedo__blocktitle">GOOGLE ADS</h3>
           </li>
               <li class="whatwedo__item">
               <img srcset="./images/1x2x/Whatwedo/fb.jpg" width="370"  src="./images/1x2x/Whatwedo/fb.jpg"
-                alt="Планшет в руке"/>
+                alt="Планшет в руке">
           <h3 class="whatwedo__blocktitle">TARGETING/SMM</h3>
           </li>
 
@@ -252,7 +311,7 @@
             
                           <source srcset="./images/1x2x/OurComand/Mobile/stas-m.jpg " media="(min-width:320px)">
                         <img src="./images/1x2x/OurComand/Desktop/stas-d.jpg"
-              alt="Станислав Фирсов"/>
+              alt="Станислав Фирсов">
             </picture>
           
             <div class="professions">
@@ -260,31 +319,31 @@
           <p class="professions__item">PPC специалист</p>
           <ul class="sociallist">
             <li class="sociallist__item">
-            <a href="" class="sociallist__link">
-            <svg class="sociallist__icon" width="20" height="20">
-              <use href="./images/svg/icons.svg#icon-instagram"></use>
-            </svg>
+            <a href="https://t.me/advertsman" class="sociallink-telegram">
+              <svg class="contact__icon " width="30" height="30">
+                <use href="./images/svg/icons.svg#icon-icons8-telegram-app"></use>
+              </svg>
             </a>
             </li>
             <li class="sociallist__item">
-            <a href="" class="sociallist__link">
-            <svg class="sociallist__icon" width="20" height="20">
-              <use href="./images/svg/icons.svg#icon-twitter"></use>
-            </svg>
+            <a href="https://api.whatsapp.com/send?phone=380931941416" class="sociallink-whatsapp">
+              <svg class="contact__icon" width="30" height="30">
+                <use href="./images/svg/icons.svg#icon-icons8-whatsapp"></use>
+              </svg>
             </a>
             </li>
             <li class="sociallist__item">
-            <a href="" class="sociallist__link">
-            <svg class="sociallist__icon" width="20" height="20">
-              <use href="./images/svg/icons.svg#icon-facebook"></use>
-            </svg>
+            <a href="viber://chat?number=380931941416" class="sociallink-viber">
+              <svg class="contact__icon" width="30" height="30">
+                <use href="./images/svg/icons.svg#icon-icons8-viber"></use>
+              </svg>
             </a>
             </li>
             <li class="sociallist__item">
-            <a href="" class="sociallist__link">
-            <svg class="sociallist__icon" width="20" height="20">
-              <use href="./images/svg/icons.svg#icon-linkedin"></use>
-            </svg>
+            <a href="mailto:zakaz@good-adverts.com" class="sociallink-gmail">
+                <svg class="contact__icon" width="30" height="30">
+              <use href="./images/svg/icons.svg#icon-icons8-gmail-logo"></use>
+              </svg>
             </a>
             </li>
           </ul>
@@ -299,7 +358,7 @@
               <source srcset="./images/1x2x/OurComand/Tablet/sasha-t.jpg" media="(min-width:768px)">
             
               <source srcset="./images/1x2x/OurComand/Mobile/sasha-m.jpg" media="(min-width:320px)">
-              <img src="./images/1x2x/OurComand/Desktop/sasha-d.jpg" alt="Александр Поливода" />
+              <img src="./images/1x2x/OurComand/Desktop/sasha-d.jpg" alt="Александр Поливода" >
             </picture>
             <div class="professions">
             <h3 class="professions__name">Александр Поливода</h3>
@@ -307,75 +366,30 @@
           </p>
           <ul class="sociallist">
             <li class="sociallist__item">
-              <a href="" class="sociallist__link">
-                <svg class="sociallist__icon" width="20" height="20">
-                  <use href="./images/svg/icons.svg#icon-instagram"></use>
+              <a href="https://t.me/advertsman" class="sociallink-telegram">
+                <svg class="contact__icon " width="30" height="30">
+                  <use href="./images/svg/icons.svg#icon-icons8-telegram-app"></use>
                 </svg>
               </a>
             </li>
             <li class="sociallist__item">
-              <a href="" class="sociallist__link">
-                <svg class="sociallist__icon" width="20" height="20">
-                  <use href="./images/svg/icons.svg#icon-twitter"></use>
+              <a href="https://api.whatsapp.com/send?phone=380931941416" class="sociallink-whatsapp">
+                <svg class="contact__icon" width="30" height="30">
+                  <use href="./images/svg/icons.svg#icon-icons8-whatsapp"></use>
                 </svg>
               </a>
             </li>
             <li class="sociallist__item">
-              <a href="" class="sociallist__link">
-                <svg class="sociallist__icon" width="20" height="20">
-                  <use href="./images/svg/icons.svg#icon-facebook"></use>
+              <a href="viber://chat?number=380931941416" class="sociallink-viber">
+                <svg class="contact__icon" width="30" height="30">
+                  <use href="./images/svg/icons.svg#icon-icons8-viber"></use>
                 </svg>
               </a>
             </li>
             <li class="sociallist__item">
-              <a href="" class="sociallist__link">
-                <svg class="sociallist__icon" width="20" height="20">
-                  <use href="./images/svg/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        </li>
-
-          <li class="comand__item">
-            <picture>
-              <source srcset="./images/1x2x/OurComand/Desktop/dima-d.jpeg" media="(min-width:1200px)">
-            
-              <source srcset="./images/1x2x/OurComand/Tablet/nikolay1x-tab.jpg 1x" media="(min-width:768px)">
-            
-              <source srcset="./images/1x2x/OurComand/Mobile/nik1xmob.jpg" media="(min-width:320px)">
-              <img src="./images/1x2x/OurComand/Desktop/dima-d.jpeg" alt="Димон" />
-            </picture>
-          <div class="professions">
-            <h3 class="professions__name">Димончик</h3>
-          <p class="professions__item">Super Puper Dev</p>
-          <ul class="sociallist">
-            <li class="sociallist__item">
-              <a href="" class="sociallist__link">
-                <svg class="sociallist__icon" width="20" height="20">
-                  <use href="./images/svg/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="sociallist__item">
-              <a href="" class="sociallist__link">
-                <svg class="sociallist__icon" width="20" height="20">
-                  <use href="./images/svg/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="sociallist__item">
-              <a href="" class="sociallist__link">
-                <svg class="sociallist__icon" width="20" height="20">
-                  <use href="./images/svg/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="sociallist__item">
-              <a href="" class="sociallist__link">
-                <svg class="sociallist__icon" width="20" height="20">
-                  <use href="./images/svg/icons.svg#icon-linkedin"></use>
+              <a href="mailto:zakaz@good-adverts.com" class="sociallink-gmail">
+                <svg class="contact__icon" width="30" height="30">
+                  <use href="./images/svg/icons.svg#icon-icons8-gmail-logo"></use>
                 </svg>
               </a>
             </li>
@@ -385,45 +399,87 @@
 
           <li class="comand__item">
             <picture>
-              <source srcset="./images/1x2x/OurComand/Desktop/mixail-1x-d.jpg 1x,
-                                ./images/1x2x/OurComand/Desktop/mixail-2x-d.jpg 2x" media="(min-width:1200px)">
+              <source srcset="./images/1x2x/OurComand/Desktop/dima.jpg" media="(min-width:1200px)">
             
-              <source srcset="./images/1x2x/OurComand/Tablet/mixail1x-tab.jpg 1x,
-                                ./images/1x2x/OurComand/Tablet/mixail2x-tab.jpg 2x" media="(min-width:768px)">
+              <source srcset="./images/1x2x/OurComand/Tablet/dima.jpg" media="(min-width:768px)">
             
-              <source srcset="./images/1x2x/OurComand/Mobile/mix1xmob.jpg 1x,
-                                ./images/1x2x/OurComand/Mobile/mix2xmob.jpg 2x" media="(min-width:320px)">
-              <img src="./images/1x2x/OurComand/Desktop/mixail-1x-d.jpg" alt="Михаил Ермаков" />
+              <source srcset="./images/1x2x/OurComand/Mobile/dima.jpg" media="(min-width:320px)">
+              <img src="./images/1x2x/OurComand/Desktop/dima.jpg" alt="Дмитрий" >
             </picture>
           <div class="professions">
-            <h3 class="professions__name">Михаил Ермаков</h3>
-          <p class="professions__item">UI Designer</p>
+            <h3 class="professions__name">Дмитрий Бартак</h3>
+          <p class="professions__item">Developer</p>
           <ul class="sociallist">
             <li class="sociallist__item">
-              <a href="" class="sociallist__link">
-                <svg class="sociallist__icon" width="20" height="20">
-                  <use href="./images/svg/icons.svg#icon-instagram"></use>
+              <a href="https://t.me/advertsman" class="sociallink-telegram">
+                <svg class="contact__icon " width="30" height="30">
+                  <use href="./images/svg/icons.svg#icon-icons8-telegram-app"></use>
                 </svg>
               </a>
             </li>
             <li class="sociallist__item">
-              <a href="" class="sociallist__link">
-                <svg class="sociallist__icon" width="20" height="20">
-                  <use href="./images/svg/icons.svg#icon-twitter"></use>
+              <a href="https://api.whatsapp.com/send?phone=380931941416" class="sociallink-whatsapp">
+                <svg class="contact__icon" width="30" height="30">
+                  <use href="./images/svg/icons.svg#icon-icons8-whatsapp"></use>
                 </svg>
               </a>
             </li>
             <li class="sociallist__item">
-              <a href="" class="sociallist__link">
-                <svg class="sociallist__icon" width="20" height="20">
-                  <use href="./images/svg/icons.svg#icon-facebook"></use>
+              <a href="viber://chat?number=380931941416" class="sociallink-viber">
+                <svg class="contact__icon" width="30" height="30">
+                  <use href="./images/svg/icons.svg#icon-icons8-viber"></use>
                 </svg>
               </a>
             </li>
             <li class="sociallist__item">
-              <a href="" class="sociallist__link">
-                <svg class="sociallist__icon" width="20" height="20">
-                  <use href="./images/svg/icons.svg#icon-linkedin"></use>
+              <a href="mailto:zakaz@good-adverts.com" class="sociallink-gmail">
+                <svg class="contact__icon" width="30" height="30">
+                  <use href="./images/svg/icons.svg#icon-icons8-gmail-logo"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        </li>
+
+          <li class="comand__item">
+            <picture>
+              <source srcset="./images/1x2x/OurComand/Desktop/katya.jpg" media="(min-width:1200px)">
+            
+              <source srcset="./images/1x2x/OurComand/Tablet/katya.jpg" media="(min-width:768px)">
+            
+              <source srcset="./images/1x2x/OurComand/Mobile/katya.jpg" media="(min-width:320px)">
+              <img src="./images/1x2x/OurComand/Desktop/katya.jpg" alt="Катя" >
+            </picture>
+          <div class="professions">
+            <h3 class="professions__name">Катерина Бартак</h3>
+          <p class="professions__item">UX/UI designer</p>
+          <ul class="sociallist">
+            <li class="sociallist__item">
+              <a href="https://t.me/advertsman" class="sociallink-telegram">
+                <svg class="contact__icon " width="30" height="30">
+                  <use href="./images/svg/icons.svg#icon-icons8-telegram-app"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sociallist__item">
+              <a href="https://api.whatsapp.com/send?phone=380931941416" class="sociallink-whatsapp">
+                <svg class="contact__icon" width="30" height="30">
+                  <use href="./images/svg/icons.svg#icon-icons8-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sociallist__item">
+              <a href="viber://chat?number=380931941416" class="sociallink-viber">
+                <svg class="contact__icon" width="30" height="30">
+                  <use href="./images/svg/icons.svg#icon-icons8-viber"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="sociallist__item">
+              <a href="mailto:zakaz@good-adverts.com" class="sociallink-gmail">
+                <svg class="contact__icon" width="30" height="30">
+                  <use href="./images/svg/icons.svg#icon-icons8-gmail-logo"></use>
                 </svg>
               </a>
             </li>
@@ -454,7 +510,7 @@
 
         <li class="clients__item">
           <a href="" class="clients__link">
-            <svg class="clients__icon" width="80" height="92">
+            <svg class="clients__icon" width="80" height="92" >
               <use href="./images/svg/icons.svg#icon-vidnova"></use>
             </svg>
           </a>
@@ -494,6 +550,8 @@
       </div>
   </section>
 
+  
+
 
 <!-- /Наша команда-->
 
@@ -505,51 +563,50 @@
 
       <div class="footeradress"> 
           <a class="footeradress__logo" href="#">
-            <span>Web</span>Studio
+            <span>Good</span>Ads
           </a>
           <address class="adress">
             <ul class="adresslist">
               <li class="adresslist__item">
-                <a class="adresslist__title" href="#">г. Киев, пр-т Леси Украинки, 26</a></li>
+                <a class="adresslist__title" href="#">Украина г.Харьков</a></li>
               <li class="adresslist__item">
-                <a class="adresslist-post" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-              <li class="adresslist__item">
-                <a class="adresslist-tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                <a class="adresslist-post" href="mailto:info@devstudio.com">zakaz@good-adverts.com</a></li>
               </ul>  
           </address>
             </div>
 
         <div class="footersocial">
-          <h3 class="footersocial__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+          <h3 class="footersocial__title">МЫ ВСЕГДА НА СВЯЗИ</h3>
           <ul class="footersocial__list">
             <li class="footersocial__item">
-              <a href="" class="footersocial__link">
-                <svg class="footersocial__icon" width="20" height="20">
-                  <use href="./images/svg/icons.svg#icon-instagram"></use>
+              <a href="https://t.me/advertsman" class="footerlink-telegram">
+                <svg class="contact__icon " width="40" height="40">
+                  <use href="./images/svg/icons.svg#icon-icons8-telegram-app"></use>
+                </svg>
+              </a>
+            </li>
+
+        
+            <li class="footersocial__item">
+              <a href="https://api.whatsapp.com/send?phone=380931941416" class="footerlink-whatsapp">
+                <svg class="contact__icon" width="40" height="40">
+                  <use href="./images/svg/icons.svg#icon-icons8-whatsapp"></use>
                 </svg>
               </a>
             </li>
         
             <li class="footersocial__item">
-              <a href="" class="footersocial__link">
-                <svg class="footersocial__icon" width="20" height="20">
-                  <use href="./images/svg/icons.svg#icon-twitter"></use>
+              <a href="viber://chat?number=380931941416" class="footerlink-viber">
+                <svg class="contact__icon" width="40" height="40">
+                  <use href="./images/svg/icons.svg#icon-icons8-viber"></use>
                 </svg>
               </a>
             </li>
         
             <li class="footersocial__item">
-              <a href="" class="footersocial__link">
-                <svg class="footersocial__icon" width="20" height="20">
-                  <use href="./images/svg/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-        
-            <li class="footersocial__item">
-              <a href="" class="footersocial__link">
-                <svg class="footersocial__icon" width="20" height="20">
-                  <use href="./images/svg/icons.svg#icon-linkedin"></use>
+              <a href="mailto:zakaz@good-adverts.com" class="footerlink-gmail">
+                <svg class="contact__icon" width="40" height="40">
+                  <use href="./images/svg/icons.svg#icon-icons8-gmail-logo"></use>
                 </svg>
               </a>
             </li>
@@ -559,19 +616,9 @@
     <!--/container-->
 
     <div class="footerform">
-      <form class="footerform__class">
-        <h3 class="footerform__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
-        <input type="email" class="input-email" name="mail" id="mailfooter" placeholder="E-mail"/>
-
-        <button type="submit" class="formfooter buttonform ">
-          Подписаться
-          <svg class="formfooter__icon" width="24" height="24">
-            <use href="./images/svg/icons.svg#icon-icon-send-1"></use>
-          </svg>
-        </button>
-      </form>
-        </div>
-        </div>
+      <button class="footer__button button " type="button" data-modal-open>Заказать услугу</button>
+      </div>
+        
       </footer>
 
 <div class="backdrop is-hidden" data-modal>
@@ -582,7 +629,7 @@
       </svg>
     </button>
     <div class="modalform">
-  <h3 class="modalform__title">Оставьте свои данные, мы вам перезвоним</h3>
+  <h3 class="modalform__title">ОСТАВЬТЕ СВОИ ДАННЫЕ ДЛЯ СВЯЗИ</h3>
   <form action="#" class="form" id="form">
     <div class="form-field">
       <label for="name" class="form-label">Имя</label>
@@ -592,7 +639,7 @@
           class="form-input _req" 
           name="name" 
           id="name" 
-          />
+          >
       <svg class="input-icon" width="18" height="18">
       <use href="./images/svg/icons.svg#icon-person-black-18dp"></use>
       </svg>
@@ -602,7 +649,7 @@
       <div class="form-field">
         <label for="phone" class="form-label ">Телефон</label>
         <div class="input-svg-wrap">
-          <input type="text" class="form-input _req" name="phone" id="phone" />
+          <input type="text" class="form-input _req" name="phone" id="phone" >
           <svg class="input-icon" width="18" height="18">
             <use href="./images/svg/icons.svg#icon-phone-black-18dp"></use>
           </svg>
@@ -612,14 +659,14 @@
         <div class="form-field">
           <label for="mail" class="form-label">Почта</label>
           <div class="input-svg-wrap">
-            <input type="text" class="form-input _req _email" name="mail" id="mail" />
+            <input type="text" class="form-input _req _email" name="mail" id="mail" >
             <svg class="input-icon" width="18" height="18">
               <use href="./images/svg/icons.svg#icon-email-black-18dp"></use>
             </svg>
           </div>
         </div>
 
-      <div class="form-field">
+      <!-- <div class="form-field">
         <label for="comment" class="form-label">Комментарий</label>
         <textarea
         name="comment" 
@@ -628,6 +675,39 @@
         placeholder="Введите текст"
         maxlength="10"
         ></textarea>
+      </div> -->
+  
+
+      <div class="checkbox__messengers">
+        <h2 class="checkbox__title">ВЫБЕРЕТЕ МЕССЕНДЖЕР ДЛЯ СВЯЗИ</h2>
+      <ul class="checkbox__list">
+        <li class="checkbox__item">
+      <input id="html" type="checkbox">
+      <label for="html">
+        <svg width="18" height="18" class="checkbox__svg .telegram">
+          <use href="./images/svg/icons.svg#icon-telegram"></use>
+        </svg>
+      </label>
+      </li>
+
+        <li class="checkbox__item">
+      <input id="html" type="checkbox">
+      <label for="html">
+        <svg width="18" height="18" class="checkbox__svg .whatsapp">
+          <use href="./images/svg/icons.svg#icon-whatsapp"></use>
+        </svg>
+      </label>
+      </li>
+
+        <li class="checkbox__item">
+      <input id="html" type="checkbox">
+      <label for="html">
+        <svg width="18" height="18" class="checkbox__svg .viber">
+          <use href="./images/svg/icons.svg#icon-viber"></use>
+        </svg>
+      </label>
+      </li>
+      </ul>
       </div>
 
       <div class="checkbox">
@@ -650,7 +730,7 @@
 
 <script src="./js/modal.js"></script>
 <script src="./js/menu.js"></script>
-<script src="./js/form.js"></script>
+
 
 
   </body>

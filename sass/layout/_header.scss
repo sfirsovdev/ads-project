@@ -1,12 +1,15 @@
 .header {
-  border-bottom: 1px solid var(--border-bottom);
+  padding-left: 284px;
+  padding-right: 262px;
 }
+
 
 .header__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   @media screen and (min-width: 768px) {
+    padding: 0;
     display: flex;
     justify-content: left;
     align-items: flex-start;

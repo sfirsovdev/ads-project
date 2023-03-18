@@ -31,6 +31,58 @@
   }
 }
 
+.contact__icon-telegram {
+  fill: #00bfff;
+
+&:hover,
+  &:focus {
+    width: 35px;
+    height: 35px;
+    fill: #0088CC;
+    transition: color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.contact__icon-whatsapp {
+  fill: #00bfff;
+
+  &:hover,
+  &:focus {
+    width: 35px;
+    height: 35px;
+    fill: #25D366;
+    transition: color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.contact__icon-viber {
+  fill: #00bfff;
+
+  &:hover,
+  &:focus {
+    width: 35px;
+    height: 35px;
+    fill: #7360F2;
+    transition: color 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.contact__icon-gmail {
+  fill: #00bfff;
+
+  &:hover,
+  &:focus {
+    width: 35px;
+    height: 35px;
+    fill: #DB4437;
+    transition: color 250ms linear;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
 .contact__mail {
   margin-right: 8px;
   width: 14px;
@@ -58,7 +110,11 @@
   }
 }
 
-.contact__link {
+.contact__item {
+  margin-left: 1;
+}
+
+.contact__link-telegram {
   margin-right: 0;
   font-weight: 500;
   font-size: 12px;
@@ -69,13 +125,9 @@
   text-decoration: none;
   transition: color 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    fill: var(--accent-text-color);
-    color: var(--accent-text-color);
-  }
 }
+
+  
 
 .contact__link-whatsapp {
   margin-right: 0;
@@ -89,12 +141,14 @@
   transition: color 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    fill: #25D366;
-    color: #25D366;
+  // &:hover,
+  //   &:focus {
+  //     width: 30px;
+  //     height: 30px;
+  //     border-radius: 50%;
+  //     background-color: rgba(254, 254, 254, 0.497);
+  //   }
   }
-}
 
 .contact__link-viber {
   margin-right: 0;
@@ -108,12 +162,14 @@
   transition: color 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    fill: #7360F2;
-      color: #7360F2;
+  // &:hover,
+  //   &:focus {
+  //     width: 30px;
+  //     height: 30px;
+  //     border-radius: 50%;
+  //     background-color: rgba(254, 254, 254, 0.497);
+  //   }
   }
-}
 
 .contact__link-gmail {
   margin-right: 0;
@@ -127,12 +183,14 @@
   transition: color 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    fill: #DB4437;
-    color: #DB4437;
+  // &:hover,
+  // &:focus {
+  //       width: 30px;
+  //       height: 30px;
+  //       border-radius: 50%;
+  //       background-color: rgba(254, 254, 254, 0.497);
+  //   }
   }
-}
 
 
 .lang__list {
@@ -141,10 +199,11 @@
   @media screen and (min-width: 768px) {
     margin-top: 32px;
     text-align:inherit;
-      margin-left: 30px;
+      margin-left: 86px;
       margin-right: 0;
     }
 }
+
 
 .lang__list>li:hover .sub-lang__list {
 display: block;
@@ -153,16 +212,30 @@ display: block;
 .sub-lang__list {
   display: none;
   position: absolute;
-  right: 22px;
+  right: 9px;
   width: inherit;
   padding-bottom: 0;
-  background-color: whitesmoke;
-  @media screen and (min-width: 768px) {
-      right: inherit;
-    }
+  color: var(--text-color);
+}
+
+i {
+  margin-left: 10px;
+  border: solid #00BFFF;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 .lang__link {
-text-decoration: none;
+  color: var(--accent-text-color);
+  text-decoration: none;
+  &:hover,
+    &:focus {
+      color: var(--text-color);
+    }
 }
-

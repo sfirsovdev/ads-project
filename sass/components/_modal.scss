@@ -33,14 +33,15 @@
 
 .modal__close {
   position: absolute;
+  fill: white;
   z-index: 999;
-  top: 10px;
-  right: 10px;
+  top: -23px;
+  right: -23px;
   width: 30px;
   height: 30px;
   background-color: transparent;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -201,11 +202,11 @@ textarea::placeholder {
   &::before {
     content: "";
     width: 16px;
-    height: 15px;
+    height: 16px;
     border: solid 2px #000000;
     margin-right: 5px;
     display: inline-block;
-    border-radius: 2px;
+    border-radius: 50%;
   }
   .modal-check:checked + &::before {
     background-image: url(../images/check-box/check.svg);
@@ -278,4 +279,38 @@ textarea::placeholder {
   }
 }
 
+.checkbox__messengers {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 285px;
+}
+
+.checkbox__title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+
+.checkbox__list {
+  margin-top: 19px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.checkbox__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox__svg{
+  cursor: pointer;
+  margin-top: 21px;
+}
 

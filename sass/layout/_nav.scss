@@ -11,7 +11,7 @@
       margin-top: 32px;
     }
     .sitenav__link {
-      color: var(--second-text-color);
+      color: var(--accent-text-color);
       text-decoration: none;
       transition: color 250ms linear;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -24,17 +24,17 @@
   .active::after {
     content: "";
     width: 100%;
-    height: 4px;
-    background-color: var(--accent-text-color);
+    height: 1px;
+    background-color: var(--text-color);
     border-radius: 2px;
     position: absolute;
     left: 0;
-    bottom: -33px;
+    bottom: -10px;
     pointer-events: none;
   }
 
   .sitenav__linkcurrent {
-    color: var(--accent-text-color);
+    color: var(--text-color);
     display: block;
     text-decoration: none;
     position: relative;

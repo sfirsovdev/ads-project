@@ -11,9 +11,9 @@
     $mail->IsHTML(true);
 
     // От кого письмо
-    $mail->setFrom('info@good-adverts.com', 'good-adverts.com');
+    $mail->setFrom('zakaz@good-adverts.com', 'good-adverts.com');
     // Кому отправить
-    $mail->addAddress('s.firsov1985@gmail.com');
+    $mail->addAddress('zakaz@good-adverts.com');
     // Тема письма
     $mail->Subject = 'Новая заявка с сайта';
 
